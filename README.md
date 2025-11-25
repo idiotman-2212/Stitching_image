@@ -5,33 +5,37 @@ This project implements a **Manual Whole Slide Scanning** system inspired by [PR
 
 ### Key Features
 ✅ **OpenCV Stitching** - Reliable panorama creation  
+✅ **Real Camera Support** - Works with USB microscope cameras (Euromex DC.5000F, ToupTek, etc.)  
+✅ **Simulation Mode** - Test with sample images before hardware  
 ✅ **Headless Mode** - Works without GUI (perfect for Windows)  
 ✅ **Image Comparison** - SSIM-based quality assessment  
 ✅ **Professional Output** - High-resolution panoramas  
-✅ **Simple & Clean** - Minimal dependencies
 
 ## 🚀 Quick Start
 
-### 1. Install Dependencies
+### Option 1: Test with Simulation (No Hardware)
 ```bash
+# Install dependencies
 pip install -r requirements.txt
-```
 
-### 2. Run the Scanner
-```bash
+# Run with sample images
 py main_headless.py
 ```
 
-This will:
-1. Capture all images from the `image/` folder
-2. Stitch them into a panorama using OpenCV
-3. Compare with `original.jpg` (reference image)
-4. Save results
+### Option 2: Test with Real Camera
+```bash
+# 1. Connect your microscope camera via USB
 
-### 3. View Results
-Output files:
-- `stitched_output.jpg` - Final panorama (stitched from image tiles)
-- `difference_map.jpg` - Comparison visualization
+# 2. Test camera first
+py realtime_camera.py
+
+# 3. Update camera index in main_headless.py
+# Change: USE_SIMULATION = False
+# Set: source = 0  # Your camera index
+
+# 4. Run scanner
+py main_headless.py
+```
 
 ## 📁 Project Structure
 
@@ -40,15 +44,19 @@ Stitching_image/
 ├── Core Files
 │   ├── main_headless.py        # Main program (headless mode)
 │   ├── camera_capture.py       # Camera/simulation handler
+│   ├── realtime_camera.py      # Real-time camera for hardware
 │   ├── stitcher.py             # OpenCV stitcher
 │   └── comparator.py           # Image comparison (SSIM)
 │
 ├── Data
-│   ├── image/                  # Input images (15 tiles)
+│   ├── image/                  # Input images (15 tiles for simulation)
 │   └── original.jpg            # Reference image (ground truth)
 │
+├── Documentation
+│   ├── README.md               # This file
+│   └── HARDWARE_SETUP.md       # Hardware integration guide
+│
 └── Configuration
-    ├── README.md               # This file
     └── requirements.txt        # Python dependencies
 ```
 
@@ -57,16 +65,33 @@ Stitching_image/
 ### Simulation Mode (Default)
 Place sequential microscope images in `image/` folder:
 ```python
+# In main_headless.py
 USE_SIMULATION = True
 IMAGE_FOLDER = "image"
 ```
 
 ### Real Camera Mode
-Connect microscope camera and set:
+Connect microscope camera (Euromex DC.5000F, ToupTek, etc.) and set:
 ```python
+# In main_headless.py
 USE_SIMULATION = False
-source = 0  # Camera index
+source = 0  # Camera index (test with realtime_camera.py first)
 ```
+
+## 🎥 Supported Hardware
+
+### Tested Cameras
+- **Euromex DC.5000F** (Recommended) - High-quality USB microscope camera
+- **ToupTek Photonics** - Various models with USB3 support
+- **Generic USB Microscope Cameras** - Most USB cameras work
+
+### Camera Requirements
+- USB 2.0 or higher
+- Windows compatible drivers
+- Resolution: 720p minimum, 1080p+ recommended
+- Frame rate: 15 fps minimum, 30 fps+ recommended
+
+**See [HARDWARE_SETUP.md](HARDWARE_SETUP.md) for detailed integration guide**
 
 ## 📊 Performance
 

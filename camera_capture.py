@@ -4,7 +4,7 @@ import os
 import time
 
 class Camera:
-    def __init__(self, source=0, width=1280, height=720, fps=30):
+    def __init__(self, source=0, width=1280, height=720, fps=60):
         self.source = source
         self.cap = None
         self.width = width

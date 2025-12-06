@@ -1,0 +1,35 @@
+Time:2025-03-03T11:13:07.4492, Landing-Med Cytoptic Analayer. Copyright Reservied 2010-2019.
+Time:2025-03-03T11:13:07.4562, ArgumentsParse.Start
+Time:2025-03-03T11:13:07.4652, ArgumentsParse.Info, InputPath:D:\Data\2025-02-27\YFB-T001
+Time:2025-03-03T11:13:07.4652, ArgumentsParse.Info, OutputPath:
+Time:2025-03-03T11:13:07.4662, ArgumentsParse.Info, ThreadCount:6
+Time:2025-03-03T11:13:07.4662, ArgumentsParse.Info, ForceBackground:False
+Time:2025-03-03T11:13:07.4662, ArgumentsParse.Info, ImageCacheSize:3500
+Time:2025-03-03T11:13:07.4662, ArgumentsParse.Info, ForceParams:False
+Time:2025-03-03T11:13:07.4662, ArgumentsParse.Info, ForceStitch:False
+Time:2025-03-03T11:13:07.4672, ArgumentsParse.Info, StitchScale:0.5
+Time:2025-03-03T11:13:07.4672, ArgumentsParse.Info, StitchMargin:0.2
+Time:2025-03-03T11:13:07.4672, ArgumentsParse.Info, BlockBackgroundBlue:240
+Time:2025-03-03T11:13:07.4672, ArgumentsParse.Info, BlockBackgroundGreen:240
+Time:2025-03-03T11:13:07.4672, ArgumentsParse.Info, BlockBackgroundRed:240
+Time:2025-03-03T11:13:07.4672, ArgumentsParse.Info, BlockSize:1024
+Time:2025-03-03T11:13:07.4672, ArgumentsParse.Info, BlockMargin:0
+Time:2025-03-03T11:13:07.4672, ArgumentsParse.Info, BlockExtractLevel:3
+Time:2025-03-03T11:13:07.4672, ArgumentsParse.Complete
+Time:2025-03-03T11:13:07.8045, LoadInput.Start
+Time:2025-03-03T11:13:07.8225, LoadInput.Info, Version:CytopticLocal
+Time:2025-03-03T11:13:12.5889, LoadInput.Info, Path:D:\Data\2025-02-27\YFB-T001
+Time:2025-03-03T11:13:12.5889, LoadInput.Info, FieldCount:1326
+Time:2025-03-03T11:13:12.5889, LoadInput.Complete
+Time:2025-03-03T11:13:12.5889, PrepareOutput.Start
+Time:2025-03-03T11:13:12.5899, PrepareThread.Start
+Time:2025-03-03T11:13:12.5899, PrepareThread.Info, ThreadCount:6
+Time:2025-03-03T11:13:12.5929, PrepareThread.Complete
+Time:2025-03-03T11:13:12.8281, Start convert Cytoptic to SVS.
+Time:2025-03-03T11:21:34.2566, Begin write labelimage
+Time:2025-03-03T11:21:34.2775, Begin write macroimage
+Time:2025-03-03T11:21:34.2835, Begin write Cells tif
+Time:2025-03-03T11:21:47.1277, Begin write Json .
+Time:2025-03-03T11:21:48.4602, SaveSample.Start
+Time:2025-03-03T11:21:48.5669, SaveSample.Complete
+Time:2025-03-03T11:21:48.5669, All.Complete, Time:00:08:41.1170882

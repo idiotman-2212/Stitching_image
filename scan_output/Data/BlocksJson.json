@@ -1,0 +1,371 @@
+[
+  {
+    "Index": 0,
+    "Level": 0,
+    "Row": -1,
+    "Coloumn": 0,
+    "CoreX": -19,
+    "CoreY": -105,
+    "ImageName": "B0000000C.jpg"
+  },
+  {
+    "Index": 1,
+    "Level": 0,
+    "Row": -2,
+    "Coloumn": 0,
+    "CoreX": -26,
+    "CoreY": -206,
+    "ImageName": "B0000001C.jpg"
+  },
+  {
+    "Index": 2,
+    "Level": 0,
+    "Row": -3,
+    "Coloumn": 0,
+    "CoreX": -36,
+    "CoreY": -308,
+    "ImageName": "B0000002C.jpg"
+  },
+  {
+    "Index": 3,
+    "Level": 0,
+    "Row": -4,
+    "Coloumn": 0,
+    "CoreX": -45,
+    "CoreY": -411,
+    "ImageName": "B0000003C.jpg"
+  },
+  {
+    "Index": 4,
+    "Level": 0,
+    "Row": -5,
+    "Coloumn": 0,
+    "CoreX": -45,
+    "CoreY": -513,
+    "ImageName": "B0000004C.jpg"
+  },
+  {
+    "Index": 5,
+    "Level": 0,
+    "Row": -6,
+    "Coloumn": 0,
+    "CoreX": -59,
+    "CoreY": -613,
+    "ImageName": "B0000005C.jpg"
+  },
+  {
+    "Index": 6,
+    "Level": 0,
+    "Row": -7,
+    "Coloumn": 0,
+    "CoreX": -66,
+    "CoreY": -715,
+    "ImageName": "B0000006C.jpg"
+  },
+  {
+    "Index": 7,
+    "Level": 0,
+    "Row": -8,
+    "Coloumn": 0,
+    "CoreX": -66,
+    "CoreY": -816,
+    "ImageName": "B0000007C.jpg"
+  },
+  {
+    "Index": 8,
+    "Level": 0,
+    "Row": -9,
+    "Coloumn": 0,
+    "CoreX": -67,
+    "CoreY": -917,
+    "ImageName": "B0000008C.jpg"
+  },
+  {
+    "Index": 9,
+    "Level": 0,
+    "Row": -10,
+    "Coloumn": 0,
+    "CoreX": -67,
+    "CoreY": -1018,
+    "ImageName": "B0000009C.jpg"
+  },
+  {
+    "Index": 10,
+    "Level": 0,
+    "Row": -11,
+    "Coloumn": 0,
+    "CoreX": -69,
+    "CoreY": -1120,
+    "ImageName": "B000000AC.jpg"
+  },
+  {
+    "Index": 11,
+    "Level": 0,
+    "Row": -12,
+    "Coloumn": 0,
+    "CoreX": -76,
+    "CoreY": -1221,
+    "ImageName": "B000000BC.jpg"
+  },
+  {
+    "Index": 12,
+    "Level": 0,
+    "Row": -13,
+    "Coloumn": 0,
+    "CoreX": -89,
+    "CoreY": -1322,
+    "ImageName": "B000000CC.jpg"
+  },
+  {
+    "Index": 13,
+    "Level": 0,
+    "Row": -14,
+    "Coloumn": -1,
+    "CoreX": -101,
+    "CoreY": -1423,
+    "ImageName": "B000000DC.jpg"
+  },
+  {
+    "Index": 14,
+    "Level": 0,
+    "Row": -15,
+    "Coloumn": -1,
+    "CoreX": -101,
+    "CoreY": -1525,
+    "ImageName": "B000000EC.jpg"
+  },
+  {
+    "Index": 15,
+    "Level": 0,
+    "Row": -16,
+    "Coloumn": -1,
+    "CoreX": -111,
+    "CoreY": -1627,
+    "ImageName": "B000000FC.jpg"
+  },
+  {
+    "Index": 16,
+    "Level": 0,
+    "Row": -17,
+    "Coloumn": -1,
+    "CoreX": -122,
+    "CoreY": -1735,
+    "ImageName": "B0000010C.jpg"
+  },
+  {
+    "Index": 17,
+    "Level": 0,
+    "Row": -18,
+    "Coloumn": -1,
+    "CoreX": -125,
+    "CoreY": -1836,
+    "ImageName": "B0000011C.jpg"
+  },
+  {
+    "Index": 18,
+    "Level": 0,
+    "Row": -19,
+    "Coloumn": -1,
+    "CoreX": -137,
+    "CoreY": -1944,
+    "ImageName": "B0000012C.jpg"
+  },
+  {
+    "Index": 19,
+    "Level": 0,
+    "Row": -20,
+    "Coloumn": -1,
+    "CoreX": -154,
+    "CoreY": -2046,
+    "ImageName": "B0000013C.jpg"
+  },
+  {
+    "Index": 20,
+    "Level": 0,
+    "Row": -21,
+    "Coloumn": -1,
+    "CoreX": -154,
+    "CoreY": -2146,
+    "ImageName": "B0000014C.jpg"
+  },
+  {
+    "Index": 21,
+    "Level": 0,
+    "Row": -22,
+    "Coloumn": -1,
+    "CoreX": -173,
+    "CoreY": -2250,
+    "ImageName": "B0000015C.jpg"
+  },
+  {
+    "Index": 22,
+    "Level": 0,
+    "Row": -23,
+    "Coloumn": -1,
+    "CoreX": -190,
+    "CoreY": -2353,
+    "ImageName": "B0000016C.jpg"
+  },
+  {
+    "Index": 23,
+    "Level": 0,
+    "Row": -24,
+    "Coloumn": -2,
+    "CoreX": -211,
+    "CoreY": -2454,
+    "ImageName": "B0000017C.jpg"
+  },
+  {
+    "Index": 24,
+    "Level": 0,
+    "Row": -25,
+    "Coloumn": -2,
+    "CoreX": -223,
+    "CoreY": -2560,
+    "ImageName": "B0000018C.jpg"
+  },
+  {
+    "Index": 25,
+    "Level": 0,
+    "Row": -26,
+    "Coloumn": -2,
+    "CoreX": -243,
+    "CoreY": -2663,
+    "ImageName": "B0000019C.jpg"
+  },
+  {
+    "Index": 26,
+    "Level": 0,
+    "Row": -27,
+    "Coloumn": -2,
+    "CoreX": -253,
+    "CoreY": -2764,
+    "ImageName": "B000001AC.jpg"
+  },
+  {
+    "Index": 27,
+    "Level": 0,
+    "Row": -28,
+    "Coloumn": -2,
+    "CoreX": -257,
+    "CoreY": -2864,
+    "ImageName": "B000001BC.jpg"
+  },
+  {
+    "Index": 28,
+    "Level": 0,
+    "Row": -29,
+    "Coloumn": -2,
+    "CoreX": -261,
+    "CoreY": -2966,
+    "ImageName": "B000001CC.jpg"
+  },
+  {
+    "Index": 29,
+    "Level": 0,
+    "Row": -30,
+    "Coloumn": -2,
+    "CoreX": -279,
+    "CoreY": -3076,
+    "ImageName": "B000001DC.jpg"
+  },
+  {
+    "Index": 30,
+    "Level": 0,
+    "Row": -31,
+    "Coloumn": -2,
+    "CoreX": -287,
+    "CoreY": -3178,
+    "ImageName": "B000001EC.jpg"
+  },
+  {
+    "Index": 31,
+    "Level": 0,
+    "Row": -32,
+    "Coloumn": -2,
+    "CoreX": -290,
+    "CoreY": -3280,
+    "ImageName": "B000001FC.jpg"
+  },
+  {
+    "Index": 32,
+    "Level": 0,
+    "Row": -33,
+    "Coloumn": -2,
+    "CoreX": -291,
+    "CoreY": -3383,
+    "ImageName": "B0000020C.jpg"
+  },
+  {
+    "Index": 33,
+    "Level": 0,
+    "Row": -34,
+    "Coloumn": -2,
+    "CoreX": -293,
+    "CoreY": -3484,
+    "ImageName": "B0000021C.jpg"
+  },
+  {
+    "Index": 34,
+    "Level": 0,
+    "Row": -35,
+    "Coloumn": -2,
+    "CoreX": -293,
+    "CoreY": -3585,
+    "ImageName": "B0000022C.jpg"
+  },
+  {
+    "Index": 35,
+    "Level": 0,
+    "Row": -36,
+    "Coloumn": -3,
+    "CoreX": -310,
+    "CoreY": -3684,
+    "ImageName": "B0000023C.jpg"
+  },
+  {
+    "Index": 36,
+    "Level": 0,
+    "Row": -37,
+    "Coloumn": -3,
+    "CoreX": -312,
+    "CoreY": -3783,
+    "ImageName": "B0000024C.jpg"
+  },
+  {
+    "Index": 37,
+    "Level": 0,
+    "Row": -38,
+    "Coloumn": -3,
+    "CoreX": -326,
+    "CoreY": -3890,
+    "ImageName": "B0000025C.jpg"
+  },
+  {
+    "Index": 38,
+    "Level": 0,
+    "Row": -40,
+    "Coloumn": -3,
+    "CoreX": -341,
+    "CoreY": -4000,
+    "ImageName": "B0000026C.jpg"
+  },
+  {
+    "Index": 39,
+    "Level": 0,
+    "Row": -41,
+    "Coloumn": -3,
+    "CoreX": -359,
+    "CoreY": -4102,
+    "ImageName": "B0000027C.jpg"
+  },
+  {
+    "Index": 40,
+    "Level": 0,
+    "Row": -42,
+    "Coloumn": -3,
+    "CoreX": -370,
+    "CoreY": -4201,
+    "ImageName": "B0000028C.jpg"
+  }
+]

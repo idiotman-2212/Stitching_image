@@ -320,4 +320,9 @@ Internal use only - ABT Medical Solutions Co., Ltd.
 
 ---
 
-**Happy Scanning! 📸🔬✨**
+**Stop Camera**
+
+```powershell
+Stop-Process -Name python -Force -ErrorAction SilentlyContinue
+```
+

@@ -67,12 +67,19 @@ def stitch_level(level, blocks_all, blocks_folder, output_path):
         return None
     
     actual_h, actual_w = sample_img.shape[:2]
-    metadata_w = sample_block['ImageWidth']
-    metadata_h = sample_block['ImageHeight']
+    
+    # Fallback neu metadata khong co ImageWidth/ImageHeight
+    metadata_w = sample_block.get('ImageWidth', actual_w)
+    metadata_h = sample_block.get('ImageHeight', actual_h)
+    
+    # Neu CoreWidth/CoreHeight thay vi ImageWidth/ImageHeight
+    if 'CoreWidth' in sample_block and 'ImageWidth' not in sample_block:
+        metadata_w = sample_block.get('CoreWidth', actual_w)
+        metadata_h = sample_block.get('CoreHeight', actual_h)
     
     # Tinh ty le scale
-    scale_x = actual_w / metadata_w
-    scale_y = actual_h / metadata_h
+    scale_x = actual_w / metadata_w if metadata_w > 0 else 1.0
+    scale_y = actual_h / metadata_h if metadata_h > 0 else 1.0
     
     print(f"\nThong tin tiles:")
     print(f"  Kich thuoc thuc te (file .jpg): {actual_w} x {actual_h}")
@@ -80,11 +87,20 @@ def stitch_level(level, blocks_all, blocks_folder, output_path):
     print(f"  Scale factor: {scale_x:.6f}")
     sys.stdout.flush()
     
-    # Tim min/max toa do tu metadata
-    min_x = min(b['ImageX'] for b in level_blocks)
-    min_y = min(b['ImageY'] for b in level_blocks)
-    max_x = max(b['ImageX'] + b['ImageWidth'] for b in level_blocks)
-    max_y = max(b['ImageY'] + b['ImageHeight'] for b in level_blocks)
+    # Tim min/max toa do tu metadata (su dung CoreX/CoreY neu khong co ImageX/ImageY)
+    def get_x(b):
+        return b.get('ImageX', b.get('CoreX', 0))
+    def get_y(b):
+        return b.get('ImageY', b.get('CoreY', 0))
+    def get_w(b):
+        return b.get('ImageWidth', b.get('CoreWidth', metadata_w))
+    def get_h(b):
+        return b.get('ImageHeight', b.get('CoreHeight', metadata_h))
+    
+    min_x = min(get_x(b) for b in level_blocks)
+    min_y = min(get_y(b) for b in level_blocks)
+    max_x = max(get_x(b) + get_w(b) for b in level_blocks)
+    max_y = max(get_y(b) + get_h(b) for b in level_blocks)
     
     # Tinh kich thuoc canvas sau khi scale
     canvas_w = int((max_x - min_x) * scale_x)
@@ -137,8 +153,8 @@ def stitch_level(level, blocks_all, blocks_folder, output_path):
             continue
         
         # Tinh vi tri tren canvas (scale toa do metadata)
-        x = int((block['ImageX'] - min_x) * scale_x)
-        y = int((block['ImageY'] - min_y) * scale_y)
+        x = int((get_x(block) - min_x) * scale_x)
+        y = int((get_y(block) - min_y) * scale_y)
         
         h, w = img.shape[:2]
         
@@ -219,6 +235,7 @@ def main():
     
     # Cau hinh duong dan
     base_path = r'f:\Backup\DELL\ABT\Stitching_image\image\YFB-T001\YFB-T001'
+    # base_path = r'f:\Backup\DELL\ABT\Stitching_image\scan_output'
     blocks_json = os.path.join(base_path, 'Data', 'BlocksJson.json')
     blocks_folder = os.path.join(base_path, 'Blocks')
     output_dir = r'f:\Backup\DELL\ABT\Stitching_image'
